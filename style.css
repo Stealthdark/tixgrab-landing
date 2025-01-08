@@ -1,0 +1,157 @@
+html,
+body {
+  font-size: 16px;
+  font-family: poppins, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #101426;
+  background-image: url("https://raw.githubusercontent.com/rithinark/Daily-Challenge/6955c6ab93447ac3aa007320fcbd8e522d1159c2/frontend/day2/images/bg-stars.svg"),
+    url("https://raw.githubusercontent.com/rithinark/Daily-Challenge/6955c6ab93447ac3aa007320fcbd8e522d1159c2/frontend/day2/images/pattern-hills.svg");
+  background-size: cover;
+  background-color: hsl(235, 16%, 14%);
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+  background-size: contain;
+}
+.text-white {
+  color: #fff;
+}
+.text-center {
+  text-align: center;
+}
+header {
+  position: relative;
+  z-index: 2;
+  padding: 1px 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contact ul li svg {
+  margin-right: 10px;
+}
+
+.contact ul li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  color: #fff;
+  flex-wrap: "nowrap";
+  font-size: 13px;
+  margin-right: 5px;
+}
+header .contact ul li:first-child {
+  margin-right: 30px;
+}
+
+.contact ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+main {
+  position: relative;
+  z-index: 2;
+  height: calc(100vh - 124.59px);
+}
+
+footer {
+  position: relative;
+  z-index: 2;
+  padding: 5px 10px;
+}
+
+@media (max-width: 575px) {
+  header .contact ul {
+    display: block;
+    padding: 0;
+  }
+  header .contact li {
+    justify-content: end;
+    margin: 0 10px !important;
+  }
+  header .contact ul li:first-child {
+    margin-bottom: 10px;
+  }
+}
+
+.img-wrapper {
+  max-width: 250px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2,
+p {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3rem;
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+footer p {
+  text-align: right;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #fff;
+}
+@media (max-width: 575px) {
+  footer p {
+    text-align: center;
+  }
+}
+footer a {
+  z-index: 2;
+  font-size: 0.82rem;
+  position: relative;
+  color: #4242da;
+  text-decoration: underline;
+  transition: all 0.3s ease-in-out;
+}
+footer a:hover {
+  color: #3939ab;
+}
+
+.social-media-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.social-media-wrapper a {
+  width: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-media-wrapper svg path {
+  fill: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.social-media-wrapper a:hover svg path,
+.social-media-wrapper svg path:hover {
+  fill: rgb(197, 120, 216);
+}
