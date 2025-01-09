@@ -8,6 +8,14 @@ body {
 }
 
 body {
+  position: relative;
+}
+body {
+  /* position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; */
   background: #101426;
   background-image: url("https://raw.githubusercontent.com/rithinark/Daily-Challenge/6955c6ab93447ac3aa007320fcbd8e522d1159c2/frontend/day2/images/bg-stars.svg"),
     url("https://raw.githubusercontent.com/rithinark/Daily-Challenge/6955c6ab93447ac3aa007320fcbd8e522d1159c2/frontend/day2/images/pattern-hills.svg");
@@ -17,6 +25,16 @@ body {
   background-position: top, bottom;
   background-size: contain;
 }
+/* body::after {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+} */
 .text-white {
   color: #fff;
 }
@@ -25,7 +43,7 @@ body {
 }
 header {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   padding: 1px 0;
 }
 .container {
@@ -59,13 +77,13 @@ header .contact ul li:first-child {
 
 main {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   height: calc(100vh - 124.59px);
 }
 
 footer {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   padding: 5px 10px;
 }
 
