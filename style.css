@@ -11,11 +11,6 @@ body {
   position: relative;
 }
 body {
-  /* position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; */
   background: #101426;
   background-image: url("https://raw.githubusercontent.com/rithinark/Daily-Challenge/6955c6ab93447ac3aa007320fcbd8e522d1159c2/frontend/day2/images/bg-stars.svg"),
     url("https://raw.githubusercontent.com/rithinark/Daily-Challenge/6955c6ab93447ac3aa007320fcbd8e522d1159c2/frontend/day2/images/pattern-hills.svg");
@@ -25,16 +20,6 @@ body {
   background-position: top, bottom;
   background-size: contain;
 }
-/* body::after {
-  content: "";
-  position: absolute;
-  background: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-} */
 .text-white {
   color: #fff;
 }
@@ -44,7 +29,14 @@ body {
 header {
   position: relative;
   z-index: 3;
-  padding: 1px 0;
+  @media(max-width: 575px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    height: 75px;
+  }
 }
 .container {
   display: flex;
@@ -52,7 +44,22 @@ header {
   align-items: center;
   height: 100%;
 }
-
+.logo-wrapper {
+  max-width: 200px;
+  padding: 10px;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media(max-width: 575px) {
+    height: 100%;
+  }
+}
 .contact ul li svg {
   margin-right: 10px;
 }
@@ -62,12 +69,30 @@ header {
   align-items: center;
   list-style: none;
   color: #fff;
-  flex-wrap: "nowrap";
   font-size: 13px;
-  margin-right: 5px;
+  margin-right: 15px;
+}
+
+.rocket-wrapper {
+  img {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    max-width: 300px;
+    border-radius: 50%;
+  }
 }
 header .contact ul li:first-child {
   margin-right: 30px;
+}
+
+.redirection-link a {
+  /* text-decoration: underline; */
+  color: #C3017B;
+  transition: all .2s ease-in-out;
+  &:hover {
+    color: #be8dca;
+  }
 }
 
 .contact ul {
@@ -78,13 +103,31 @@ header .contact ul li:first-child {
 main {
   position: relative;
   z-index: 3;
-  height: calc(100vh - 124.59px);
+  height: calc(100vh - 139.06px);
+  padding: 0 15px;
+  @media(max-width: 575px) {
+    margin-top: 75px;
+    height: calc(100vh - 120px);
+  }
+}
+
+.text-underline {
+  display: block;
+  text-decoration: underline;
 }
 
 footer {
   position: relative;
   z-index: 3;
-  padding: 5px 10px;
+  padding: 10px 15px;
+
+  p {
+    margin: 0;
+  }
+  /* @media(max-width: 575px) {
+    height: 75.09px;
+    max-height: 75.09px;
+  } */
 }
 
 @media (max-width: 575px) {
@@ -138,6 +181,9 @@ footer p {
 @media (max-width: 575px) {
   footer p {
     text-align: center;
+  }
+  .header-icon {
+    display: none;
   }
 }
 footer a {
