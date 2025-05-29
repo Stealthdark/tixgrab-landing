@@ -64,6 +64,15 @@
         margin-top: 180px;
       }
     }
+    @media(max-width: 991px) {
+      .card-header, .card-body {
+        padding: 10px;
+      }
+    }
+    .btn:focus {
+      outline: none;
+      box-shadow: none;
+    }
   </style>
   <body>
     <header>
@@ -87,7 +96,7 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact-wrap mb-0">
+        <ul class="contact-wrap mb-3">
           <li>
             <svg
               width="35"
@@ -139,20 +148,20 @@
     </header>
 
     <main>
-      <div class="container-lg py-5">
+      <div class=" py-2 px-0">
         <div class="accordion" id="accordionExample">
           <div class="card">
-            <div class="card-header" id="headingOne">
+            <div class="card-header bg-dark" id="headingOne">
               <h2 class="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left p-1 text-dark"
+                  class="btn btn-link btn-block text-left p-1 text-white"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseOne"
                   aria-expanded="true"
                   aria-controls="collapseOne"
                 >
-                  Privacy Policies
+                  Privacy Policy - TixGrab
                 </button>
               </h2>
             </div>
@@ -349,17 +358,17 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header bg-dark" id="headingTwo">
               <h2 class="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed p-1 text-dark"
+                  class="btn btn-link btn-block text-left collapsed p-1 text-white"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseTwo"
                   aria-expanded="false"
                   aria-controls="collapseTwo"
                 >
-                  Term's & Conditions
+                  Term's & Conditions - TixGrab
                 </button>
               </h2>
             </div>
@@ -705,10 +714,10 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header" id="headingThree">
+            <div class="card-header bg-dark" id="headingThree">
               <h2 class="mb-0">
                 <button
-                  class="btn btn-link btn-block text-left collapsed p-1 text-dark"
+                  class="btn btn-link btn-block text-left collapsed p-1 text-white"
                   type="button"
                   data-toggle="collapse"
                   data-target="#collapseThree"
@@ -774,7 +783,7 @@
                     deducting applicable convenience and service fees.
                   </p>
 
-                  <h4 class="mt-4">
+                  <h5 class="mt-4 font-weight-bold">
                     2. No Return, Refund, Resell, or Exchange
                   </h5>
                   <p>
@@ -791,7 +800,7 @@
                     <li>Exchanges for different dates, times, or events</li>
                   </ul>
 
-                  <h4 class="mt-4">3. Event Cancellation</h5>
+                  <h5 class="mt-4 font-weight-bold">3. Event Cancellation</h5>
                   <p>
                     3.1 Refunds are only permitted if the event is officially
                     canceled by the event organizer.
