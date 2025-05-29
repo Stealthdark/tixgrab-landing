@@ -130,13 +130,17 @@ footer {
 }
 
 @media (max-width: 575px) {
-  header .contact ul.contact-wrap  {
+  header .contact ul.contact-wrap {
     /* display: block; */
     padding: 0;
   }
-    header .contact ul {
-      margin: 15px 0 !important;
-    }
+  header .contact ul.nav-links {
+    margin: 15px 0 !important;
+  }
+  header {
+    background-color: #101426;
+    z-index: 1000;
+  }
 }
 
 .img-wrapper {
