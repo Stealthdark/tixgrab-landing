@@ -1,0 +1,869 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>TixGrab</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Your Gateway to unforgettable nights! The ultimate art community platform. We cater to musicians, artists, enthusiasts, professionals, and technicians in the music and arts ecosystem. Tixgrab is more than just a portal, it's a vibrant social media hub where people unite. As we grow we continue to add inovative features to better serve our community's needs."
+    />
+    <meta
+      name="keywords"
+      content="events,tickets,bookings,nightlife,clubs,festivals"
+    />
+    <meta name="author" content="TixGrab" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <style>
+    header {
+      background-color: #101426;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    body {
+        background-image: unset;
+    }
+
+    main {
+      margin-top: 81px;
+
+      @media(max-width: 991px) {
+        margin-top: 180px;
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <div class="contact">
+        <div class="logo-wrapper">
+          <a href="/index.html"
+            ><img src="assets/tixgrab-logo.png" alt="brand-logo"
+          /></a>
+        </div>
+        <nav>
+          <ul class="nav-links p-0 mb-0">
+            <li>
+              <a class="active" href="/TixGrabPolicies.html" target="_self"
+                >TixGrab's Policies</a
+              >
+            </li>
+            <li>
+              <a href="http://tinyurl.com/tixgrab-whatsapp-catalog" target="_blank"
+                >TixGrab's Events <span class="badge">Beta</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <ul class="contact-wrap mb-0">
+          <li>
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              class="header-icon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="17.2688"
+                cy="17.2688"
+                r="16.2688"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M24 11C24.8125 11 25.5 11.6875 25.5 12.5C25.5 13 25.25 13.4375 24.875 13.7188L18.0938 18.8125C17.7188 19.0938 17.25 19.0938 16.875 18.8125L10.0938 13.7188C9.71875 13.4375 9.5 13 9.5 12.5C9.5 11.6875 10.1562 11 11 11H24ZM16.2812 19.625C17 20.1562 17.9688 20.1562 18.6875 19.625L25.5 14.5V21C25.5 22.125 24.5938 23 23.5 23H11.5C10.375 23 9.5 22.125 9.5 21V14.5L16.2812 19.625Z"
+                fill="white"
+              />
+            </svg>
+            <a href="mailto:tixgrab@protonmail.com">tixgrab@protonmail.com</a>
+          </li>
+          <li>
+            <svg
+              width="35"
+              height="35"
+              viewBox="0 0 35 35"
+              fill="none"
+              class="header-icon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="17.2688"
+                cy="17.2688"
+                r="16.2688"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M25.4688 21.0938L24.7188 24.25C24.625 24.7188 24.25 25.0313 23.7812 25.0313C15.9062 25 9.5 18.5938 9.5 10.7188C9.5 10.25 9.78125 9.87503 10.25 9.78128L13.4062 9.03128C13.8438 8.93753 14.3125 9.18753 14.5 9.59378L15.9688 13C16.125 13.4063 16.0312 13.875 15.6875 14.125L14 15.5C15.0625 17.6563 16.8125 19.4063 19 20.4688L20.375 18.7813C20.625 18.4688 21.0938 18.3438 21.5 18.5L24.9062 19.9688C25.3125 20.1875 25.5625 20.6563 25.4688 21.0938Z"
+                fill="white"
+              />
+            </svg>
+            <a href="tel:+919456785530">+91 94567 85530</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-lg py-5">
+        <div class="accordion" id="accordionExample">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left p-1 text-dark"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Privacy Policies
+                </button>
+              </h2>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <div class="text-dark position-relative z-2 p-1">
+                  <h5 class="mb-1">
+                    Privacy Policy
+                    <span class="font-weight-bold"> - Tixgrab</span>
+                  </h5>
+                  <p class="fw-light mb-4 sm-text">
+                    <small>Last modified: May 06, 2025</small>
+                  </p>
+                  <p>
+                    This Privacy Policy outlines Tixgrab's (and/or its
+                    subsidiaries/affiliates, collectively referred to as
+                    "Tixgrab," "we," or "our") practices regarding the
+                    collection, use, storage, disclosure, and transfer of
+                    information that you provide through our online platforms,
+                    including our official website, applications, social media
+                    sites, and any other digital services operated by Tixgrab
+                    (collectively referred to as the "Sites").
+                  </p>
+                  <p>
+                    By using our Services, you agree to this policy and consent
+                    to our handling of your information as described herein. You
+                    may choose not to provide us with the requested information
+                    or withdraw consent previously given. However, in such
+                    cases, Tixgrab reserves the right to deny you access to our
+                    Services.
+                  </p>
+                  <p class="mb-4">
+                    You are responsible for keeping your password and other
+                    credentials confidential. We disclaim any liability arising
+                    from your failure to do so. If you become aware that your
+                    password has been compromised, please contact us
+                    immediately.
+                  </p>
+                  <h5 class="font-weight-bold">General Visit Information</h5>
+                  <p class="mb-4">
+                    Browsing our Sites generally does not require you to
+                    disclose personal information. However, we may track the
+                    internet addresses of the domains used by visitors to
+                    analyze user data.
+                  </p>
+                  <h5 class="font-weight-bold">Collection and Storage of Information</h5>
+                  <p>
+                    Individuals under the age of 18 (referred to as "Minors")
+                    are not permitted to conduct transactions on Tixgrab. If a
+                    Minor engages with our Services, it is assumed that their
+                    legal guardians or parents have given consent, and we
+                    disclaim any liability related to the actions of Minors.
+                  </p>
+                  <p>
+                    <span class="fw-bold">Contact Information:</span> We collect
+                    details such as your name, age, gender, phone number,
+                    address, email ID, profile pictures, username, password,
+                    government-issued identification, and other related
+                    information.
+                  </p>
+                  <p>
+                    <span class="fw-bold">Additional Details:</span> Artists,
+                    vendors, and business partners may be asked for specific
+                    details including their work category, project name, social
+                    media links, professional experience, company information,
+                    gig range, services offered, and pricing details.
+                  </p>
+                  <p>
+                    <span class="fw-bold">Payment Information:</span> We collect
+                    billing information such as your name, billing address, and
+                    payment method for purchases and subscriptions. However,
+                    credit/debit card and bank details are processed by our
+                    online partners.
+                  </p>
+                  <p>
+                    <span class="fw-bold">User-Posted Information:</span> We
+                    collect information that you post or activities you engage
+                    in on our platforms.
+                  </p>
+                  <p class="mb-4">
+                    <span class="fw-bold">Other Information:</span> We may
+                    gather your IP address, operating system details, browser
+                    information, device information, visit duration and
+                    frequency, pages visited, date and time of visit, device
+                    location, metadata, log files, error logs, geographic and
+                    demographic data, and other related information.
+                  </p>
+                  <h5 class="font-weight-bold">Modes of Collection and Storage</h5>
+                  <p class="mb-4">
+                    We may collect information directly from you during
+                    registration or other interactions with our platform. We use
+                    tracking technologies like cookies, web beacons, and
+                    analytics tools. We may also collect information from social
+                    media platforms if you sign up through these sites and from
+                    our business partners and service providers.
+                  </p>
+                  <h5 class="font-weight-bold">Use of Information</h5>
+                  <p>
+                    Your information will be used for various purposes,
+                    including:
+                  </p>
+                  <ul>
+                    <li>
+                      <p>Providing access to our platforms and services.</p>
+                    </li>
+                    <li><p>Verifying and authenticating your identity.</p></li>
+                    <li>
+                      <p>
+                        Managing financial transactions and customer support.
+                      </p>
+                    </li>
+                    <li><p>Analyzing user behavior to improve services.</p></li>
+                    <li>
+                      <p>
+                        Enforcing our terms of use and ensuring platform
+                        security.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Displaying personalized content and advertisements.</p>
+                    </li>
+                    <li>
+                      <p>
+                        Processing transactions and managing audit and tax
+                        compliance.
+                      </p>
+                    </li>
+                  </ul>
+                  <h5 class="font-weight-bold">Sharing of Information</h5>
+                  <p>
+                    Subject to your privacy settings, your public profile
+                    details, uploaded work, and other activities may be visible
+                    to other users. Information may be shared with affiliates,
+                    vendors, business partners, payment processors, and other
+                    service providers. We may also share data with social media
+                    platforms and advertising networks.
+                  </p>
+                  <p class="mb-4">
+                    Your information may be disclosed in legal proceedings, to
+                    protect our interests, or during a merger or acquisition. We
+                    strive to ensure that affiliates maintain the security of
+                    your data.
+                  </p>
+                  <h5 class="font-weight-bold">User Rights</h5>
+                  <p>You have the right to:</p>
+                  <ul>
+                    <li><p>Withdraw consent for our services.</p></li>
+                    <li>
+                      <p>
+                        Delete or restrict the use of your information under
+                        certain conditions.
+                      </p>
+                    </li>
+                    <li><p>Review and correct your information.</p></li>
+                    <li>
+                      <p>
+                        Request disclosure regarding the use of your
+                        information.
+                      </p>
+                    </li>
+                    <li><p>Lodge complaints with our Grievance Officer.</p></li>
+                  </ul>
+                  <h5 class="font-weight-bold">Retention of Information</h5>
+                  <p class="mb-4">
+                    While you can delete your account or content, deleted items
+                    may persist on our servers temporarily or appear elsewhere
+                    if shared by others. We may retain information to fulfill
+                    legal obligations or protect our legitimate interests.
+                  </p>
+                  <h5 class="font-weight-bold">Quality of Data</h5>
+                  <p class="mb-4">
+                    You are responsible for ensuring that the information you
+                    provide is accurate and up-to-date.
+                  </p>
+                  <h5 class="font-weight-bold">Security Practices</h5>
+                  <p class="mb-4">
+                    We implement reasonable procedures to protect your personal
+                    information and ensure a standard of protection when data is
+                    transferred.
+                  </p>
+                  <h5 class="font-weight-bold">Revisions</h5>
+                  <p class="mb-4">
+                    We may update this policy periodically. Please review it
+                    occasionally for changes.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed p-1 text-dark"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Term's & Conditions
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <div class="text-dark position-relative z-2 p-1">
+                  <h5 class="mb-0 fw-bold">
+                    Term's & Conditions -
+                    <span class="text-purple font-weight-bold">Tixgrab</span>
+                  </h5>
+                  <p class="fw-light mb-4 sm-text">
+                    <small>Last modified: May 06, 2025</small>
+                  </p>
+                  <p>
+                    Welcome to TixGrab, a service provided by TixGrab (India)
+                    Private Limited (hereinafter referred to as “TixGrab,” “we,”
+                    “us,” or “our”). Users of our Services (defined below) are
+                    referred to as "User," "you," or "your."
+                  </p>
+                  <p>
+                    These terms of use ("Terms") govern your use of our
+                    websites, mobile applications, or any other
+                    products/services provided by TixGrab ("Service"), directly
+                    or indirectly, through any electronic device or platform,
+                    including but not limited to a computer, mobile phone, or
+                    tablet. The Services may be provided by us or through our
+                    subsidiaries, affiliates, or third-party service providers.
+                    Third-party service providers act as intermediaries (as
+                    defined under applicable laws, including but not limited to
+                    the Information Technology Act, 2000) and we are not
+                    responsible for the content provided by any third party.
+                  </p>
+                  <p class="mb-4">
+                    Please read these Terms, along with our Privacy Policy,
+                    Cookies Policy, and any other terms of use, carefully. If
+                    you do not agree to any of these, please refrain from using
+                    our Services. By using our Services, you agree to comply
+                    with these Terms, which, along with our other policies and
+                    guidelines such as the Privacy Policy and Cookies Policy,
+                    govern our relationship with you. These Terms thus
+                    constitute a legal contract between you and TixGrab.
+                  </p>
+                  <h5 class="font-weight-bold">1. Our Service</h5>
+                  <p>
+                    1.1 TixGrab is an art community platform catering to
+                    artists, art enthusiasts, art businesses, and journalists.
+                    It serves as a communication platform, social media portal,
+                    and community for musicians and artists worldwide.
+                  </p>
+                  <p>
+                    1.2 Our platform includes a “Forum” section to help artists
+                    express themselves, an “Event Calendar” section to inform
+                    you about notable events globally, and a direct “Booking”
+                    section for event organizers and booking agents to engage
+                    artists.
+                  </p>
+                  <p>
+                    1.3 We support artists as curators by offering databases of
+                    venues, agents, and galleries and facilitating direct
+                    bookings and sales.
+                  </p>
+                  <p>
+                    1.4 We provide a free database, serving as a key search
+                    engine for artists, labels, and curators.
+                  </p>
+                  <p>
+                    1.5 Music streaming is a significant component of TixGrab.
+                    We operate our own streaming servers, connecting artist and
+                    record label profiles, allowing for high-quality audio
+                    uploads, and providing a unique service in the Indian music
+                    industry. Music content can be sold as physical and/or
+                    digital copies through secure local payment gateways, easing
+                    the process for artists to showcase and sell their work.
+                  </p>
+                  <p>
+                    1.6 TixGrab also offers consultancy services to artists
+                    regarding Indian laws, organizations, and their rights. We
+                    will not participate in disputes but provide advisory
+                    services as needed.
+                  </p>
+                  <p class="mb-4">
+                    1.7 We aim to assist artists by running fundraising
+                    campaigns to cover/subsidize their costs and organize
+                    resources to support new art creation and expand the artist
+                    community.
+                  </p>
+
+                  <h5 class="font-weight-bold">2. Eligibility to Use TixGrab</h5>
+                  <p>
+                    To access and use our services, you must meet the following
+                    criteria:
+                  </p>
+                  <p>
+                    2.1 You must be at least 18 years old or the applicable age
+                    of majority in your jurisdiction.
+                  </p>
+                  <p>
+                    2.2 You must be competent to enter into a contract under
+                    applicable laws.
+                  </p>
+                  <p>
+                    2.3 Your account must not have been previously disabled by
+                    us for violating our Terms, policies, or guidelines.
+                  </p>
+                  <p class="mb-4">
+                    2.4 You must not be prohibited from using our Services under
+                    applicable laws.
+                  </p>
+
+                  <h5 class="font-weight-bold">3. Registration and Account with TixGrab</h5>
+                  <p>
+                    3.1 Registration is not mandatory to use our Services, but
+                    some features are available only to registered users.
+                  </p>
+                  <p>
+                    3.2 During registration, you must provide accurate and
+                    current information. Your personal information will be
+                    managed according to our Privacy Policy.
+                  </p>
+                  <p>
+                    3.3 You may create only one account based on the data you
+                    provide at registration.
+                  </p>
+                  <p>
+                    3.4 For commercial use of TixGrab, you must create a
+                    business account and provide the required details. An
+                    undertaking is necessary to open an account for a company,
+                    organization, or other entity, confirming that you are
+                    authorized to grant all permissions and licenses outlined in
+                    these Terms and bind the entity to them.
+                  </p>
+                  <p>
+                    3.5 Impersonating another individual’s identity is
+                    prohibited.
+                  </p>
+                  <p class="mb-4">
+                    3.6 We are not responsible for inaccuracies or outdated
+                    information provided during registration. Providing false or
+                    incorrect data may lead to account termination without prior
+                    notice.
+                  </p>
+
+                  <h5 class="font-weight-bold">4. User Responsibilities</h5>
+                  <p>
+                    4.1 Do not share your registration data (such as username
+                    and password) or grant access to your TixGrab account to
+                    others, or transfer your account without our permission. You
+                    are responsible for maintaining the confidentiality and
+                    security of your username, password, and account activity.
+                  </p>
+                  <p>
+                    4.2 Notify us in writing if your username or password is
+                    lost or stolen, or if you believe your account has been
+                    accessed by an unauthorized third party. Change your
+                    password as soon as possible. You may register to use the
+                    Services via third-party social networking sites (e.g.,
+                    Facebook, Google), provided you confirm ownership and
+                    entitlement to disclose your account login information to
+                    us. You authorize us to collect your verified information
+                    and other data available through your social media account
+                    as per your settings.
+                  </p>
+                  <p>
+                    4.3 You agree not to use our Services for any unlawful or
+                    prohibited purpose under these Terms and applicable law.
+                  </p>
+                  <p>
+                    4.4 You confirm that you will not upload, post, modify,
+                    publish, share, store, transmit, submit, exchange, or make
+                    available any content that:
+                  </p>
+                  <div class="indented-section">
+                    <p>
+                      (a) Belongs to another person without the right to use it;
+                    </p>
+                    <p>
+                      (b) Is grossly harmful, harassing, defamatory, obscene,
+                      pornographic, paedophilic, libellous, invasive of privacy,
+                      hateful, racially or ethnically objectionable,
+                      disparaging, related to money laundering or gambling, or
+                      otherwise unlawful;
+                    </p>
+                    <p>(c) Harms minors in any way;</p>
+                    <p>(d) Outrages the modesty of women;</p>
+                    <p>(e) Violates any law in force;</p>
+                    <p>(f) Infringes any intellectual property rights;</p>
+                    <p>
+                      (g) Misleads about the origin of your content or is
+                      grossly offensive or menacing;
+                    </p>
+                    <p>(h) Impersonates another person;</p>
+                    <p>(i) Contains viruses or other harmful software;</p>
+                    <p>
+                      (j) Threatens the unity, integrity, defense, security, or
+                      sovereignty of the country, or public order; and
+                    </p>
+                    <p>
+                      (k) Harvests or collects information about others,
+                      accesses restricted parts of the Services, or attempts to
+                      bypass restrictions on use.
+                    </p>
+                  </div>
+                  <p class="mb-4">
+                    4.5 Content violating these rules will be disabled or
+                    removed. For clarity, “content” includes all work on our
+                    platforms, such as sound recordings, cover artwork, artist
+                    names, and album names.
+                  </p>
+
+                  <h5 class="font-weight-bold">5. Termination and Suspension of Account</h5>
+                  <p>
+                    5.1 To ensure a safe and secure environment, adhere strictly
+                    to these Terms, our policies, and guidelines. We may suspend
+                    or terminate your account and remove non-compliant
+                    information if you violate these Terms.
+                  </p>
+                  <p class="mb-4">
+                    5.2 If you delete your account or we disable it, these Terms
+                    will terminate as a contract between you and us, subject to
+                    the terms related to account deletion.
+                  </p>
+
+                  <h5 class="font-weight-bold">6. Representation and Warranties</h5>
+                  <p>
+                    6.1 You represent and warrant that your content is original
+                    or that you have obtained all necessary rights, licenses,
+                    consents, and permissions to use such content and to
+                    authorize TixGrab to use it as described in these Terms.
+                  </p>
+                  <p class="mb-4">
+                    6.2 You further warrant that TixGrab’s exercise of licensed
+                    rights will not infringe on third-party rights.
+                  </p>
+
+                  <h5 class="font-weight-bold">7. Indemnity</h5>
+                  <p>
+                    You agree to indemnify, defend, and hold harmless TixGrab
+                    and its affiliates, and their respective owners, directors,
+                    officers, employees, shareholders, agents, and licensors
+                    from any losses, expenses, damages, claims, and costs,
+                    including reasonable attorney’s fees, arising from:
+                  </p>
+                  <div class="indented-section">
+                    <p>
+                      (a) Your violation of these Terms, our policies, or
+                      guidelines;
+                    </p>
+                    <p>
+                      (b) Third-party claims of intellectual property
+                      infringement or invasion of privacy related to your
+                      content on TixGrab’s platforms; and
+                    </p>
+                    <p>
+                      (c) Failure to meet obligations related to your account.;
+                    </p>
+                  </div>
+                  <p class="mb-4">
+                    We reserve the right to assume exclusive defense of any
+                    claim for which we are entitled to indemnification.
+                  </p>
+
+                  <h5 class="font-weight-bold">8. Disclaimer of Liability and Warranty</h5>
+                  <p>
+                    8.1 Our Services are provided “as is,” and we disclaim all
+                    warranties, express or implied, including implied warranties
+                    of title, merchantability, fitness for a particular purpose,
+                    and non-infringement.
+                  </p>
+                  <p>
+                    8.2 We are not responsible for content posted by others or
+                    third parties using our Services. You acknowledge that you
+                    may encounter content that is inaccurate, objectionable, or
+                    otherwise unsuitable.
+                  </p>
+                  <p>
+                    8.3 We do not guarantee that the Services will be
+                    uninterrupted or error-free, or free of defects, malware, or
+                    viruses. We do not warrant the authenticity or accuracy of
+                    the Services.
+                  </p>
+                  <p>
+                    8.4 Third-party services or products advertised on our
+                    platforms are not endorsed by us, and we are not responsible
+                    for transactions between you and third-party providers.
+                  </p>
+                  <p>
+                    8.5 We are not liable for failures to perform obligations
+                    due to force majeure events, and these Terms will be
+                    suspended during such events.
+                  </p>
+                  <p>
+                    8.6 We do not authorize any third party to make warranties
+                    on our behalf.
+                  </p>
+                  <p>
+                    8.7 We are not liable for any damages arising from these
+                    Terms or our products, even if we were advised of the
+                    possibility of such damages.
+                  </p>
+                  <p>
+                    8.8 We do not guarantee that our Services will meet all your
+                    expectations and requirements.
+                  </p>
+                  <p>
+                    8.9 Accessing our platforms from regions where content is
+                    illegal is prohibited. If you access our platforms from
+                    outside India, you are responsible for complying with all
+                    local laws.
+                  </p>
+                  <p>8.10 You acknowledge that TixGrab:</p>
+                  <div class="indented-section ms-3">
+                    <p>
+                      (a) Stores content at the direction, request, and
+                      authorization of its Users;
+                    </p>
+                    <p>
+                      (b) Acts as a passive conduit and host for content; and
+                    </p>
+                    <p>
+                      (c) Plays no active role in presenting or using the
+                      content. You are solely responsible for content you
+                      upload, and TixGrab excludes all liability regarding
+                      content on its platforms.
+                    </p>
+                  </div>
+                  <p class="mb-4">
+                    We reserve the right to assume exclusive defense of any
+                    claim for which we are entitled to indemnification.
+                  </p>
+
+                  <h5 class="font-weight-bold">9. Third-Party Links, Sites, and Services</h5>
+                  <p>TixGrab may contain links to third-party websites,</p>
+                  <router-link to="/tixgrab-eula" class="mt-4"
+                    >End User License Agreement</router-link
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button
+                  class="btn btn-link btn-block text-left collapsed p-1 text-dark"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Return and Refunds
+                </button>
+              </h2>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                <div class="text-dark position-relative z-2 p-1 text-dark">
+                  <h5 class="mb-1 fw-bold">
+                    Return & Refunds Policy -
+                    <span class="text-purple font-weight-bold">Tixgrab</span>
+                  </h5>
+                  <p class="fw-light mb-4 sm-text">
+                    <small>Last modified: May 06, 2025</small>
+                  </p>
+
+                  <p>
+                    Welcome to TixGrab, a service provided by TixGrab (India)
+                    Private Limited (hereinafter referred to as “TixGrab,” “we,”
+                    “us,” or “our”).
+                  </p>
+                  <p>
+                    This Return and Refund Policy explains our policies
+                    regarding the return, refund, resell, and exchange of
+                    tickets purchased through our platform. By purchasing
+                    tickets on TixGrab, you agree to the terms outlined below.
+                  </p>
+                  <p class="sm-text mb-4">
+                    Important: All ticket sales are final. Refunds are only
+                    issued in the event of an official event cancellation
+                    <i>(see Section 3)</i>. Please review event details
+                    carefully before purchase.
+                  </p>
+                  <p class="mb-4">
+                    Please read this policy carefully. If you do not agree to
+                    any part of it, please refrain from making a ticket purchase
+                    on our platform.
+                  </p>
+
+                  <h5 class="font-weight-bold">1. General Policy</h5>
+                  <p>
+                    1.1 TixGrab is an e-ticketing platform that lists events and
+                    showcases venues.
+                  </p>
+                  <p>1.2 We do not curate or organize any events ourselves.</p>
+                  <p>
+                    1.3 All tickets sold on our platform are listed by
+                    independent event organizers and venue owners.
+                  </p>
+                  <p>
+                    1.4 TixGrab acts as an intermediary to facilitate ticket
+                    sales and collects payments on behalf of organizers,
+                    deducting applicable convenience and service fees.
+                  </p>
+
+                  <h4 class="mt-4">
+                    2. No Return, Refund, Resell, or Exchange
+                  </h5>
+                  <p>
+                    2.1 Once a ticket is purchased and issued through our
+                    platform, it is deemed final and non-refundable.
+                  </p>
+                  <p>2.2 TixGrab does not support or allow:</p>
+                  <ul class="indented-section">
+                    <li>Returns of tickets</li>
+                    <li>
+                      Refunds for any reason (except as outlined in Section 3)
+                    </li>
+                    <li>Ticket reselling or transfer through our platform</li>
+                    <li>Exchanges for different dates, times, or events</li>
+                  </ul>
+
+                  <h4 class="mt-4">3. Event Cancellation</h5>
+                  <p>
+                    3.1 Refunds are only permitted if the event is officially
+                    canceled by the event organizer.
+                  </p>
+                  <p>
+                    <strong>3.2 Postponement and Refunds Due to Government Guidelines or Administrative Conditions</strong>
+                    In the event that an event is postponed due to government guidelines or any other administrative conditions, TixGrab reserves the right to hold refunds. In such cases, the existing tickets shall remain 100% valid for the rescheduled date. TixGrab retains full discretion to withhold the pre-sale collected amounts, even if the event organizer has previously indicated that the tickets are refundable.
+                  </p>
+                  <p>
+                    3.3 The event organizer must provide written confirmation of
+                    the cancellation to the customer and must also notify
+                    TixGrab in writing.
+                  </p>
+                  <p>
+                    3.4 Once verified, the refund process will be initiated as
+                    per the instructions from the event organizer and subject to
+                    our policies and timelines. Refunds, once approved, will
+                    typically be processed within 12–14 business days, subject
+                    to banking and processing times.
+                  </p>
+                  <p>
+                    3.5 In any of the cases mentioned in <i>Clause 3.3</i>, the
+                    Customer must contact the support team via.
+                    <a class="text-primary" href="mailto:care.tixgrab@gmail.com">email</a>. Only upon
+                    such communication will the refund request be considered and
+                    the initiation process commenced.
+                  </p>
+                  <p class="mb-4">
+                    3.6 TixGrab will refund the ticket amount as directed,
+                    excluding the non-refundable convenience and service fees.
+                  </p>
+
+                  <h5 class="font-weight-bold">4. Legal Disclaimer</h5>
+                  <p>
+                    4.1 Under no other conditions—including customer no-shows,
+                    event dissatisfaction, or personal schedule conflicts, will
+                    TixGrab entertain return, refund, or exchange requests.
+                  </p>
+                  <p>
+                    4.2 TixGrab operates strictly within the bounds of
+                    applicable Indian laws and acts solely as a ticketing
+                    intermediary.
+                  </p>
+                  <p class="mb-4">
+                    4.3 All ticket-related disputes must be addressed directly
+                    with the event organizer, except in cases where TixGrab is
+                    legally required to intervene.
+                  </p>
+
+                  <h5 class="font-weight-bold">5. Contact Information</h5>
+                  <p>
+                    If you have questions or concerns about our Return and
+                    Refund Policy, you may contact our support team at
+                    <a class="text-primary" target="_blank" href="mailto:care.tixgrab@gmail.com"
+                      >care.tixgrab@gmail.com</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </main>
+
+    <!-- <footer>
+      <p>
+        Copyright &copy; 2025 - 2028
+        <a href="https://www.instagram.com/tixgrab/" target="_blank">TixGrab</a>
+        | All Rights Reserved
+      </p>
+    </footer> -->
+  </body>
+</html>

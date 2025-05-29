@@ -29,13 +29,12 @@ body {
 header {
   position: relative;
   z-index: 3;
-  @media(max-width: 575px) {
+  @media (max-width: 575px) {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 2;
-    height: 75px;
   }
 }
 .container {
@@ -56,7 +55,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  @media(max-width: 575px) {
+  @media (max-width: 575px) {
     height: 100%;
   }
 }
@@ -88,8 +87,8 @@ header .contact ul li:first-child {
 
 .redirection-link a {
   /* text-decoration: underline; */
-  color: #C3017B;
-  transition: all .2s ease-in-out;
+  color: #c3017b;
+  transition: all 0.2s ease-in-out;
   &:hover {
     color: #be8dca;
   }
@@ -105,9 +104,9 @@ main {
   z-index: 3;
   height: calc(100vh - 139.06px);
   padding: 0 15px;
-  @media(max-width: 575px) {
-    margin-top: 75px;
-    height: calc(100vh - 120px);
+  @media (max-width: 575px) {
+    margin-top: 185px;
+    /* height: calc(100vh - 120px); */
   }
 }
 
@@ -131,17 +130,13 @@ footer {
 }
 
 @media (max-width: 575px) {
-  header .contact ul {
-    display: block;
+  header .contact ul.contact-wrap  {
+    /* display: block; */
     padding: 0;
   }
-  header .contact li {
-    justify-content: end;
-    margin: 0 10px !important;
-  }
-  header .contact ul li:first-child {
-    margin-bottom: 10px;
-  }
+    header .contact ul {
+      margin: 15px 0 !important;
+    }
 }
 
 .img-wrapper {
@@ -218,4 +213,30 @@ footer a:hover {
 .social-media-wrapper a:hover svg path,
 .social-media-wrapper svg path:hover {
   fill: rgb(197, 120, 216);
+}
+
+.badge {
+  background-color: rgb(0, 170, 255);
+  padding: 2px 10px;
+  border-radius: 5px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.navlinks a {
+  &:hover {
+    color: #be8dca;
+  }
+}
+
+@media (max-width: 575px) {
+  h3 {
+    font-size: 15px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  header .contact {
+    flex-direction: column;
+  }
 }
